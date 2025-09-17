@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHATRANJ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body data-scroll-container>
+    <div id="page1" >
+        <nav>
+            <div class="left">
+                <h3>SHATRANJ</h3>
+            </div>
+            <div class="right">
+                <a href="/users/profile">PROFILE</a>
+                <a href="/users/login">LOGIN</a>
+                <a href="/users/register" id="signin">SIGN IN</a>
+            </div>
+        </nav>
+        <h1>The Ultimate Battlefield ,
+            the mental gym!
+        </h1>
+        <button id="playbtn"><a href="/game" style="text-decoration: none;">Play</a></button>
+        <div class="dummies">
+            <img src="\images\image.png" alt="">
+        </div>
+        <div class="dummy-back"></div>
+    </div>
+    <div id="page2">
+        <h1>Excitement & Thrill all at once!</h1>
+        <div class="background-parent">
+
+            <div class="background-boxe1"></div>
+            <div class="background-boxe2"></div>
+
+            <div class="background-boxe3"></div>
+            <div class="background-boxe4"></div>
+
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <script src="/vanillaJs/initGame.js"></script>
+</body>
+</html>

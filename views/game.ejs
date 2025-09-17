@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/gamestyle.css" />
+  </head>
+  <body>
+    <div class="parent-board">
+      <div class="board"></div>
+    </div>
+    <div class="right-side">
+      <ul id="moves">
+        <% (movesList || []).forEach(m => { %>
+            <li><%= m.color %> played <%= m.piece %><%= m.from %> → <%= m.piece %><%= m.to %></li>
+        <% }) %>
+      </ul>
+    </div>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="/vanillaJs/chessGame.js"></script>
+    <script src="/vanillaJs/gameClient.js"></script>
+  </body>
+</html>
